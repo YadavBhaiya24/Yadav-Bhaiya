@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06110f">
+  <meta name="description" content="DakuBhaiya Cricket — match updates, schedule and official live stream links.">
+  <title>DakuBhaiya Cricket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="DakuBhaiya home">
+      <span class="brand-mark">DB</span>
+      <span><strong>Daku<span>Bhaiya</span></strong><small>CRICKET • MATCH UPDATES</small></span>
+    </a>
+    <nav>
+      <a href="#live">Live</a><a href="#schedule">Schedule</a><a href="#telegram">Telegram</a>
+    </nav>
+    <a class="button button-small telegram-link" href="#" target="_blank" rel="noopener">✈ Join Telegram</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> CRICKET HUB</p>
+        <h1>Cricket is better<br><span>together.</span></h1>
+        <p class="hero-sub">Live match access, fixtures and updates — all in one place.</p>
+        <div class="hero-actions">
+          <a class="button telegram-link" href="#" target="_blank" rel="noopener">✈ Join our Telegram</a>
+          <a class="button button-ghost" href="#live">View match player ↓</a>
+        </div>
+        <p class="fineprint">Streams are shown only when an authorized source is configured.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="stadium-glow"></div>
+        <div class="score-card"><span class="live-dot"></span> MATCH CENTRE <b>DB • LIVE</b><hr><strong>YOUR NEXT MATCH</strong><small>Scores and fixtures can be updated in script.js</small></div>
+        <div class="ball">●</div>
+      </div>
+    </section>
+
+    <section class="section" id="live">
+      <div class="section-heading"><div><p class="eyebrow">WATCH & FOLLOW</p><h2>Live match</h2></div><span class="pill"><span class="live-dot"></span> PLAYER</span></div>
+      <div class="match-layout">
+        <article class="panel video-panel">
+          <div class="video-head"><div><span class="pill red">LIVE</span> <strong id="match-title">Cricket Live Stream</strong></div><span class="quality">AUTHORIZED SOURCE</span></div>
+          <div class="player" id="player">
+            <div class="player-placeholder">
+              <div class="play-icon">▶</div>
+              <h3>Stream player</h3>
+              <p>Add your authorized stream URL in <code>script.js</code>.</p>
+            </div>
+          </div>
+          <div class="video-foot"><span>Use official broadcaster links only.</span><span class="pill">HD • If available</span></div>
+        </article>
+        <aside class="panel match-info">
+          <p class="eyebrow">MATCH DETAILS</p>
+          <h3 id="fixture-title">Upcoming fixture</h3>
+          <div class="teams"><div class="team"><div class="team-badge">A</div><span id="team-a">Team A</span></div><b class="vs">VS</b><div class="team"><div class="team-badge">B</div><span id="team-b">Team B</span></div></div>
+          <div class="detail-row"><span>Format</span><strong id="format">T20 / ODI</strong></div>
+          <div class="detail-row"><span>Start time</span><strong id="match-time">Update in script.js</strong></div>
+          <a class="button button-full telegram-link" href="#" target="_blank" rel="noopener">Get match updates on Telegram ↗</a>
+          <p class="fineprint">Fixture details are sample text until you edit them.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="schedule">
+      <div class="section-heading"><div><p class="eyebrow">DON'T MISS OUT</p><h2>Match schedule</h2></div></div>
+      <div class="schedule-grid" id="schedule-list"></div>
+    </section>
+
+    <section class="telegram-banner" id="telegram">
+      <div class="telegram-symbol">✈</div>
+      <div><p class="eyebrow">JOIN THE COMMUNITY</p><h2>Follow DakuBhaiya on Telegram</h2><p>Match announcements, fixtures and cricket updates.</p></div>
+      <a class="button telegram-link" href="#" target="_blank" rel="noopener">Join Telegram ↗</a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">DB</span><span><strong>Daku<span>Bhaiya</span></strong><small>CRICKET HUB</small></span></a><p>Use only streams you own or are authorized to embed. This site does not host video content.</p><span>© <span id="year"></span> DakuBhaiya</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
